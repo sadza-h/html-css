@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h3>Prva forma</h3>
+        
+        <form>
+            <label for="name">Ime:</label> <br>
+            <input type="text" id="name">
+
+            <br><br>
+
+            <label for="age">Godine:</label> <br>
+            <input type="number" id="age">
+
+            <br><br>
+
+            <button>Posalji</button>
+
+        </form>
+
+        <hr>
+
+        <h3>Forma za registraciju</h3>
+
+        <form>
+            <label for="username">Korisnicko ime:</label> <br>
+            <input type="text" id="username" required>
+
+            <br><br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" required>
+
+            <br><br>
+
+            <label for="password">Password:</label> <br>
+            <input type="password" id="password" required>
+
+            <h4>Odberi spol:</h4>
+            
+            <input type="radio" id="musko" name="spol">
+            <label for="musko">Musko</label>
+
+            <input type="radio" id="zensko" name="spol">
+            <label for="zensko">Zensko</label>
+
+
+            <h4>Odberi jezike koje poznajes:</h4>
+
+            <input type="checkbox" id="html" name="jezik">
+            <label for="html">Html</label>
+
+            <br>
+
+            <input type="checkbox" id="css" name="jezik">
+            <label for="css">Css</label>
+
+            <br>
+
+            <input type="checkbox" id="javascript" name="jezik">
+            <label for="javascript">JavaScript</label>
+
+            <br>
+
+
+            <h4>Odberi grad:</h4>
+
+            <select id="grad" name="grad">
+                <option>Odaberi grad</option>
+                <option>Sarajevo</option>
+                <option>Zenica</option>
+                <option>Tuzla</option>
+                <option>Bihać</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="poruka">Poruka:</label> <br>
+            <textarea id="poruka" rows="20" cols="50"></textarea>
+
+
+            <br><br>
+            <button>Posalji</button>
+
+        </form>
+
+    </body>
+</html>
