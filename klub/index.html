@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Točak - Biciklistički klub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="meni">
+            <li><a href="#pocetna">Početna</a></li>
+            <li class="patuljci">
+                <a href="#">Predmeti</a>
+                <ul class="podmeni">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                </ul>
+            </li>
+            <li class="patuljci">
+                <a href="#">Racun</a>
+                <ul class="podmeni">
+                    <li><a href="#">profil</a></li>
+                    <li><a href="#">odjava</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+    <section class="hero" id="pocetna">
+        <h1>Vozi s nama</h1>
+        <p>Klub mladih biciklista iz tvog grada.</p>
+        <p>Vikend vožnje, nova prijateljstva i puno svježeg zraka.</p>
+        <a href="#prijava" class="button">Pridruži se</a>
+    </section>
+
+    <section class="container" id="o-klubu">
+        <h2>Zašto Točak?</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Vožnja</h3>
+                <p>Svake sedmice vozimo nove rute i otkrivamo zanimljiva mjesta.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ekipa</h3>
+                <p>Upoznaj prijatelje koji vole biciklizam i druženje.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sigurnost</h3>
+                <p>Vozimo odgovorno i poštujemo saobraćajna pravila.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="galerija">
+        <h2>Galerija</h2>
+
+        <div class="gallery">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+            <img src="https://www.gostiona.com/wp-content/uploads/2021/07/pasta-712664_1920-1024x683.jpg" alt="Tjestenina carbonara" width="400" height="300">
+        </div>
+    </section>
+
+    <section class="container" id="prijava">
+        <h2>Prijava</h2>
+
+        <form>
+            <label for="ime">Ime i prezime</label>
+            <input type="text" id="ime" placeholder="Unesi ime i prezime" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Unesi e-mail" required>
+
+            <button type="submit" class="button">Pošalji prijavu</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>biciklo</h3>
+        <p>Biciklistički klub</p>
+        <p>Vozi sigurno i uživaj u svakom kilometru.</p>
+    </footer>
+
+</body>
+</html>

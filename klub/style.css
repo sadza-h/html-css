@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tamna: #14213D;
+    --plava: #2B4C7E;
+    --narandzasta: #FCA311;
+    --tekst: #1E2A3A;
+}
+
+.patuljci { position: relative; }
+.podmeni {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    z-index: 10;
+    background-color: #2D3B5E;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.patuljci:hover .podmeni { display: block;}
+a:hover { background-color: #3B82F6; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--tekst);
+    background-color: white;
+}
+
+/* Navigacija */
+header {
+    background-color: var(--tamna);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+}
+
+.logo {
+    color: var(--narandzasta);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--narandzasta);
+}
+
+/* Uvodni dio */
+.hero {
+    background: linear-gradient(120deg, var(--plava), #5279AE);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 8px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--narandzasta);
+    color: var(--tamna);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* O klubu */
+.container {
+    padding: 55px 8%;
+}
+
+h2 {
+    text-align: center;
+    color: var(--tamna);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px #00000010;
+}
+
+.card h3 {
+    color: var(--plava);
+    margin-bottom: 10px;
+}
+
+/* Galerija */
+.gallery-section {
+    background-color: #F4F6FA;
+    padding: 55px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery-item {
+    height: 130px;
+    border-radius: 8px;
+}
+
+.slika1 {
+    background: linear-gradient(135deg, #58C8D8, #2B4C7E);
+}
+
+.slika2 {
+    background: linear-gradient(135deg, #FCA311, #D66A48);
+}
+
+.slika3 {
+    background: linear-gradient(135deg, #9ACB8B, #397B63);
+}
+
+.slika4 {
+    background: linear-gradient(135deg, #B5A8E8, #5369A5);
+}
+
+.slika5 {
+    background: linear-gradient(135deg, #39B9B5, #226B80);
+}
+
+.slika6 {
+    background: linear-gradient(135deg, #F1A4B4, #A85E79);
+}
+
+/* Forma */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+form .button {
+    align-self: center;
+}
+
+/* Podnožje */
+footer {
+    background-color: var(--tamna);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h3 {
+    color: var(--narandzasta);
+    margin-bottom: 8px;
+}
+
+/* Prilagodba za mobitele */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
